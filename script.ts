@@ -1,10 +1,29 @@
-// Primitives = Number String Boolean Any
-// let varname:datatype: = value (syntax)
+// Function
+// Parameter Type
+// Return Type (void and never)
 
+// function createProduct(name: string, price: number) {
+//   console.log(name, price);
+// }
 
-let age: number = 34;
-let myName: string = "Alice";
-let invalid: boolean = false;
-let id: any = "fj12234";
+// createProduct("pen", 4000);
 
-console.log(age, myName, invalid, id)
+// function createProduct(): string {
+//   return "product created successfully!";
+// }
+
+// let x = createProduct();
+
+// console.log(x);
+
+// function greet(): void {
+//   console.log("Nothing to return")
+// }
+
+// greet()
+
+// function errorHandle(): never {
+//   throw Error("Error due to some reason");
+// }
+
+// errorHandle();
