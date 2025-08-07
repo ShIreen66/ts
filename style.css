@@ -1,0 +1,31 @@
+p {
+  background-color: green;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 10px;
+}
+
+h2 {
+  margin: 10px;
+  background-color: #8056c0;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 8px;
+  color: aliceblue;
+}
+
+ol {
+  background-color: rgb(231, 197, 9);
+  width: fit-content;
+  border-radius: 10px;
+  margin: 10px;
+ padding: auto;
+ padding-right: 6px;
+ padding-bottom: 6px;
+ padding-top: 6px;
+}
+
