@@ -1,19 +1,21 @@
-// object
-// Type Alias (create validator)
-// read-only and optional
-// union type
-var product = {
-    id: "qw1223",
-    name: "Pen",
-    price: 10,
-    brand: "Cello",
-    discount: 10,
-    stock: 10,
-    category: "product"
-};
-product.name = "pencil";
-// product.id = "123"; not change id value (error)
-function createProduct(product) {
-    return product;
-}
-console.log(product);
+// let dayNames: string[] = ["monday", "tuesday", "wednesday"]
+// dayNames.push("thu")
+// let monthName: Array<number> = [12]
+// console.log(dayNames)
+//
+// let product: [string, number] = ["Pen", 10]
+// // product.pop("he")
+// console.log(product)
+// const PI = 3.14
+// PI = 22/7
+// enum Answer {
+//   yes = 0,
+//   no = 1,
+// }
+// console.log(Answer.yes)
+var Months;
+(function (Months) {
+    Months["jan"] = "january";
+    Months["feb"] = "february";
+})(Months || (Months = {}));
+console.log(Months.jan);

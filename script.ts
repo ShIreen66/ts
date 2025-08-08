@@ -1,38 +1,26 @@
-// object
-// Type Alias (create validator)
-// read-only and optional
-// union type
+// let dayNames: string[] = ["monday", "tuesday", "wednesday"]
+// dayNames.push("thu")
+// let monthName: Array<number> = [12]
 
-type ID = number;
+// console.log(dayNames)
+//
+// let product: [string, number] = ["Pen", 10]
+// // product.pop("he")
+// console.log(product)
 
-type Product = {
-  readonly id: number | string | boolean;
-  name: string;
-  price: number;
-  brand: string;
-  discount?: number;
-};
+// const PI = 3.14
+// PI = 22/7
 
-type ProductDetails = Product & {
-  stock: number;
-  category: string;
-};
+// enum Answer {
+//   yes = 0,
+//   no = 1,
+// }
 
-let product: ProductDetails = {
-  id: "qw1223",
-  name: "Pen",
-  price: 10,
-  brand: "Cello",
-  discount: 10,
-  stock: 10,
-  category: "product"
-};
+// console.log(Answer.yes)
 
-product.name = "pencil";
-// product.id = "123"; not change id value (error)
-
-function createProduct(product: Product): Product {
-  return product;
+enum Months {
+  jan= "january",
+  feb= "february"
 }
 
-console.log(product);
+console.log(Months.jan)
