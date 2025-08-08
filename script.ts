@@ -1,29 +1,31 @@
-// Function
-// Parameter Type
-// Return Type (void and never)
+// object
+// Type Alias (create validator)
+// read-only and optional
+// union type
 
-// function createProduct(name: string, price: number) {
-//   console.log(name, price);
+// type ID = number;
+
+// type Product = { name: string; price: number; brand: string };
+
+// let product: Product = {
+//   name: "Pen",
+//   price: 10,
+//   brand: "Cello",
+// };
+
+// function createProduct(product: Product): Product {
+//   return product;
 // }
 
-// createProduct("pen", 4000);
+// console.log(product);
 
-// function createProduct(): string {
-//   return "product created successfully!";
-// }
+//  they can be anonymous:
 
-// let x = createProduct();
+type Person = {
+  name: string;
+  age?: number;
+};
 
-// console.log(x);
+let user: Person = { name: "Amit" };
 
-// function greet(): void {
-//   console.log("Nothing to return")
-// }
-
-// greet()
-
-// function errorHandle(): never {
-//   throw Error("Error due to some reason");
-// }
-
-// errorHandle();
+console.log(user);
