@@ -77,20 +77,46 @@
     <h2>Day 7 Narrowing</h2>
     <ol>
       Type Narrowing
+      <li>
+        Using in operator: Ye check karta hai ki kya ek property (key) kisi
+        object ya type me exist karti hai ya nahi.
+      </li>
+      <li>
+        Using instanceOf: instanceof sirf classes/constructors ke liye kaam
+        karta hai, interfaces ke liye nahi. <br />
+
+        Ye runtime me check karta hai object ka actual prototype chain. <br />
+
+        Type narrowing me kaafi useful hai jab aapke paas multiple class
+        instances ho.
+      </li>
     </ol>
-    <li>
-      Using in operator: Ye check karta hai ki kya ek property (key) kisi object
-      ya type me exist karti hai ya nahi.
-    </li>
-    <li>
-      Using instanceOf: instanceof sirf classes/constructors ke liye kaam karta
-      hai, interfaces ke liye nahi. <br />
-
-      Ye runtime me check karta hai object ka actual prototype chain. <br />
-
-      Type narrowing me kaafi useful hai jab aapke paas multiple class instances
-      ho.
-    </li>
+    <h2>Day 8</h2>
+    <ol>
+      <li>
+        Class: Class ek blueprint hota hai object banane ka. Isme properties
+        (data) aur methods (functions) hote hain.
+      </li>
+      <li>
+        Public Private: Ye decide karte hain ki property/method kahaan se access
+        ho sakti hai.
+      </li>
+      <li>
+        Getter Setter <br />Getter → property read karne ka controlled way
+        <br />Setter → property set/update karne ka controlled way
+      </li>
+      <li>Protected: Not access from object</li>
+      <li>
+        Interface: Interface ek contract hai jo define karta hai ki ek object ke
+        paas kaunse properties/methods hone chahiye. <br />
+        Koi implementation nahi hoti, sirf structure.
+      </li>
+      <li>
+        Abstract Class: Abstract class ek partially implemented class hoti hai —
+        isme kuch methods implement hote hain, <br />
+        kuch abstract (sirf declaration, implementation subclass karega)
+      </li>
+    </ol>
     <script src="script.js"></script>
   </body>
 </html>
