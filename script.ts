@@ -1,27 +1,34 @@
-interface Product {
-  readonly id: number | string;
-  name: string;
-  price: number;
-  brand: string;
-  discount?: number;
-  details: () => string;
-  stock: number; // type added
+// function getData(data: number | string | boolean) {
+//   if (typeof data === "number") {
+//     console.log(data.toFixed(2));
+//   } else if (typeof data === "string") {
+//     console.log(data.toUpperCase());
+//   } else {
+//     console.log(!data);
+//   }
+// }
+
+// getData(true)
+
+// type Male = { nobirth: () => {} };
+// type Female = { birth: () => {} };
+
+// function Human(person: Male | Female) {
+//   person;
+//   if ("nobirth" in person) {
+//     console.log(person);
+//   } else {
+//     person;
+//   }
+// }
+
+function valueType(x: Date | string) {
+  if (x instanceof Date) {
+    console.log(x.getMinutes());
+  } else {
+    console.log(x.toUpperCase());
+  }
 }
 
-interface productDetails extends Product {
-  quantity: number;
-  category: string;
-}
-
-let product: productDetails = {
-  id: "12ui3434",
-  name: "pen",
-  price: 100,
-  brand: "cello",
-  details: () => "this product details page",
-  stock: 11,
-  quantity: 22,
-  category: "copy",
-};
-
-console.log(product);
+// valueType(new Date());
+valueType("hello");
